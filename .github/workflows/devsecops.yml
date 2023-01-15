@@ -86,6 +86,7 @@ jobs:
         tags: ghcr.io/${{ github.repository }}/app:latest
     - run: echo ${{ steps.docker_build.outputs.digest }}
 
+
   oss-scan:
     name: SCA - Dependency Checker
     runs-on: ubuntu-latest
