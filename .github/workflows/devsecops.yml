@@ -25,7 +25,7 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
     - run: java --version && mvn --version
     - name: Install Dependencies
-      run: cd /${{ github.repository }}/tree/main/pw/pw-jwt-oauth/server/ && mvn install -DskipTests -Dspotbugs.skip=true -Ddependency-check.skip=true
+      run: cd /home/runner/work/angular-security-training/angular-security-training/tree/main/pw/pw-jwt-oauth/server/ && mvn install -DskipTests -Dspotbugs.skip=true -Ddependency-check.skip=true
 
   secret-scan:
     name: Secret scanner
