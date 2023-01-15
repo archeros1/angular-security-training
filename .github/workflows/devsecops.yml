@@ -68,7 +68,7 @@ jobs:
     - name: Publish Artefact
       uses: actions/upload-artifact@v1
       with:
-        name: Application Jar
+        name: Application war
         path: target/app.war
     - name: Login to GitHub Container Registry
       uses: docker/login-action@v1
