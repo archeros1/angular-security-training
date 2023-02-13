@@ -29,7 +29,7 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:h2:mem:bookstore;DB_CLOSE_DELAY=-1
     username: bookstore
-    password: bonjour
+    password:
   h2:
     console:
       enabled: false
